@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <meta charset="utf-8">
+        <title>Club Auto - Accueil</title>
+        <link rel="stylesheet" href="style/style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>CLUB AUTO</h1>
+            <div id="adresse">
+                <img src="media/icone-adresse.png" alt="icone position">
+                <p>ADRESSE:<br>
+                AVENUE CHARLES DE GAULLE<br>
+                75000 PARIS</p>
+            </div>
+
+            <div id="telephone">
+                <img src="media/icon-telephone.png" alt="icone telephone">
+                <p>TELEPHONE:<br>
+                01 23 45 67 89</p>
+            </div>
+
+            <div id="horaires">
+                <p>Ouverture: Du lundi au Samedi</p>
+                <p>Horaires: De 9h à 17h</p>
+            </div>
+
+            <div id="reseaux sociaux">
+                <img src="media/" alt="icone facebook">
+                <img src="media/" alt="icone twitter">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li>VENTE</li>
+                    <li>LOCATION</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+            <button id="menuToggle"><img src="media/" alt="icone menu"></button>
+        </header>
+
+        <section id="conteneurFormulaire">
+            <h1>CONTACTEZ NOUS</h1>
+            <form id="formContact">
+                <label for="fName">Prénom*</label>
+                <input type="text" name="fName" id="fName" placeholder="Entrez votre prénom" required>
+
+                <label for="lName">Nom*</label>
+                <input type="text" name="lName" id="lName" placeholder="Entrez votre nom" required>
+
+                <label for="mail">Email*</label>
+                <input type="text" name="mail" id="mail" placeholder="Entrez une adresse mail valide" required>
+
+                <label for="telephone">Téléphone</label>
+                <input type="text" name="telephone" id="telephone" placeholder="Numéro de téléphone">
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Entrez votre message"></textarea>
+                </div>
+
+                <button type="submit"> ENVOYEZ </button>
+            </form>
+
+        </section>
+
+        <footer>
+            <div id="conteneurFooter">
+                <div class="itemFooter">
+                    <h2>CLUB AUTO</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Eveniet, nesciunt placeat reiciendis eum assumenda</p>
+                </div>
+
+                <div class="itemFooter">
+                    <h2>HORAIRE D'OUVERTURE</h2>
+                    <p><strong>lundi-samedi: </strong>09:00-17:00<br>
+                    <strong>Dimanche et jours feriés:</strong> Fermé</p>
+                </div>
+
+                <div class="itemFooter">
+                    <h2>NEWSLETTER</h2>
+                    <input type="text" name="email" id="email">
+                    <p>Inscrivez-vous pour recevoir les offres</p>
+                </div>
+
+                <div class="itemFooter">
+                    <h2>RESEAUX SOCIAUX</h2>
+                    
+                </div>
+
+            </div>
+        </footer>
+
+    </body>
+</html>
