@@ -2,49 +2,59 @@
 <html>
     <head lang="fr">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Club Auto - Accueil</title>
+        <link rel="stylesheet" href="style/bootstrap.min.css">
         <link rel="stylesheet" href="style/style.css">
 
     </head>
 
     <body>
         <header>
-            <h1>CLUB AUTO</h1>
-            <div id="adresse">
-                <img src="media/icone-adresse.png" alt="icone position">
-                <p>ADRESSE:<br>
-                AVENUE CHARLES DE GAULLE<br>
-                75000 PARIS</p>
+            <div id="enTete" class="d-inline-flex-row justify-content-center">
+                <h1>CLUB AUTO</h1>
+                <div id="adresse">
+                    <img src="media/icone-adresse.png" alt="icone position">
+                    <p>ADRESSE:<br>
+                    AVENUE CHARLES DE GAULLE<br>
+                    75000 PARIS</p>
+                </div>
+
+                <div id="telephone">
+                    <img src="media/icon-telephone.png" alt="icone telephone">
+                    <p>TELEPHONE:<br>
+                    01 23 45 67 89</p>
+                </div>
+
+                <div id="horaires">
+                    <p>Ouverture: Du lundi au Samedi</p>
+                    <p>Horaires: De 9h à 17h</p>
+                </div>
+
+                <div id="reseaux sociaux">
+                    <img src="media/" alt="icone facebook">
+                    <img src="media/" alt="icone twitter">
+                </div>
             </div>
 
-            <div id="telephone">
-                <img src="media/icon-telephone.png" alt="icone telephone">
-                <p>TELEPHONE:<br>
-                01 23 45 67 89</p>
-            </div>
-
-            <div id="horaires">
-                <p>Ouverture: Du lundi au Samedi</p>
-                <p>Horaires: De 9h à 17h</p>
-            </div>
-
-            <div id="reseaux sociaux">
-                <img src="media/" alt="icone facebook">
-                <img src="media/" alt="icone twitter">
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">ACCUEIL</a></li>
-                    <li>VENTE</li>
-                    <li>LOCATION</li>
-                    <li>CONTACT</li>
-                </ul>
+            <nav class="nav">
+                <a class="nav-link-active nav-item nav-tabs" href="index.html">ACCUEIL</a>
+                <a class="nav-link nav-item nav-tabs" href="index.html">VENTE</a>
+                <a class="nav-link nav-item nav-tabs" href="index.html">LOCATION</a>
+                <a class="nav-link nav-item nav-tabs" href="index.html">CONTACT</a>
             </nav>
             <button id="menuToggle"><img src="media/" alt="icone menu"></button>
+
         </header>
 
         <main id="ficheProduit">
+            <section id="filAriane">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">ACCUEIL</li>
+                    <li class="breadcrumb-item">VENTE</li>
+                    <li class="breadcrumb-item">BMW 5351, NAVI, LEATHER, ABS</li>
+                </ol>
+            </section>
 
             <section id="visuelProduit">
                 <h1>BMW 535i, Navi, Leather, ABS</h1>
