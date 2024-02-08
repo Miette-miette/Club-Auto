@@ -1,3 +1,38 @@
+/*HEADER*/
+
+#enTete{
+    background-color: #232628;
+    color: #FFFFFF;
+}
+
+#enTete>div>h2{
+    color:#CC6119;
+}
+
+/* BANNIERE */
+
+#banniereTexte{
+    background-color: #232628;
+    color: #FFFFFF;
+}
+
+/* LOCATION ET ACHAT */
+
+#locationAchat{
+    background-image: url(../media/vehicule3.jpg);
+}
+
+#location{
+    background-color: #FAB637;
+}
+
+#achat{
+    background-color: #FF4848 ;
+}
+
+
+/*VENTE ET LOCATION*/
+
 #venteEtLocation{
     background-image: url(../media/vehicule3.jpg) ;
     background-size:cover ;
