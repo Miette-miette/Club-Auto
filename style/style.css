@@ -3,6 +3,7 @@
 #enTete{
     background-color: #232628;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #enTete>div>h2{
@@ -14,6 +15,14 @@
 #banniereTexte{
     background-color: #232628;
     color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: 800;
+   
+}
+
+#banniereTexte>p:nth-child(2){
+    color: #CC6119;
 }
 
 /* LOCATION ET ACHAT */
