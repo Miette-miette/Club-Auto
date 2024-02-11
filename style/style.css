@@ -4,11 +4,79 @@
     background-color: #232628;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    padding: 1em;
+
 }
 
-#enTete>div>h2{
-    color:#CC6119;
+#enTete>h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
+
+#enTete>div>img{
+    vertical-align: middle;
+    width: 3em;
+    height: 3em;
+    margin: 4px;
+}
+
+/*HEADER: ADRESSE*/
+
+#adresse{
+    margin-top: 1em;
+}
+
+#adresse>div>h2 {
+    color: #CC6119;
+    font-weight: 700;
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+/*HEADER: TELEPHONE*/
+
+#telephone{
+    margin-top: 1em;
+}
+
+#telephone>div>h2{
+    color: #CC6119;
+    font-weight: 700;
+    font-size: small;
+    margin-bottom: 1%;
+}
+
+#telephone>div>p{
+    font-size: large;
+}
+
+/*HEADER: HORAIRES*/
+
+#horaires{
+    margin-top: 1em;
+}
+
+.indication{
+    color: #CC6119;
+    font-weight: 700;
+    font-size: small;
+    margin-right: 10px;
+}
+
+/* HEADER: RESEAUX SOCIAUX */
+
+#reseauxSociaux>div>img{
+    padding: 1em;
+}
+
+.bgIcon{
+    background-color: rgba(155, 155, 155, 0.719) ;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+
 
 /* BANNIERE */
 

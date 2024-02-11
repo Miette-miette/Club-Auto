@@ -15,29 +15,42 @@
 
     <body>
         <header>
-            <div id="enTete" class="d-inline-flex justify-content-around align-items-stretch">
+            <div id="enTete" class="d-inline-flex justify-content-around align-items-center">
                 <h1 class="d-flex align-self-center">CLUB AUTO</h1>
-                <div id="adresse" class="d-flex">
+                
+                <div id="adresse" class="d-flex align-self-start">
                     <img src="media/icone-adresse.png" alt="icone position">
-                    <h2>ADRESSE:</h2>
-                    <p>AVENUE CHARLES DE GAULLE<br>
-                    75000 PARIS</p>
+                    <div>
+                        <h2>ADRESSE:</h2>
+                        <p>AVENUE CHARLES DE GAULLE<br>
+                        75000 PARIS</p>
+                    </div>
                 </div>
 
-                <div id="telephone" class="d-flex">
+                <div id="telephone" class="d-flex align-self-start">
                     <img src="media/icon-telephone.png" alt="icone telephone">
-                    <h2>TELEPHONE:</h2>
-                    <p>01 23 45 67 89</p>
+                    <div>
+                        <h2>TELEPHONE:</h2>
+                        <p><strong>01 23 45 67 89</strong></p>
+                    </div>
                 </div>
 
-                <div id="horaires" class="d-flex flex-column">
-                    <p>Ouverture: Du lundi au Samedi</p>
-                    <p>Horaires: De 9h à 17h</p>
+                <div id="horaires" class="d-flex flex-column align-items-start align-self-start">
+                    <div class="d-flex flex-row align-self-baseline">
+                        <p><div class="indication">OUVERTURE:</div> <strong> Du lundi au Samedi</strong></p>
+                    </div>
+                    <div class="d-flex flex-row align-items-baseline">
+                        <p><div class="indication">HORAIRES:</div> <strong> De 9h à 17h </strong></p>
+                    </div>
                 </div>
 
-                <div id="reseaux sociaux" class="d-flex align-self-center">
-                    <img src="media/" alt="icone facebook">
-                    <img src="media/" alt="icone twitter">
+                <div id="reseauxSociaux" class="d-flex align-self-center">
+                    <div class="bgIcon">
+                        <img src="media/facebook.svg" alt="icone facebook">
+                    </div>
+                    <div class="bgIcon">
+                        <img src="media/twitter.svg" alt="icone twitter">
+                    </div>
                 </div>
             </div>
 
