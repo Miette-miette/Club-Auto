@@ -5,7 +5,7 @@
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
-    padding: 1em;
+    padding: 1em 15%;
 
 }
 
@@ -71,22 +71,54 @@
 }
 
 .bgIcon{
-    background-color: rgba(155, 155, 155, 0.719) ;
+    background-color: rgba(155, 155, 155, 0.144) ;
     border-radius: 50%;
     margin-right: 2em;
 }
 
+/* NAV */
 
+nav{
+    background-color:rgba(255, 255, 255, 0.753);
+    box-shadow: 0px 3px 15px -4px #000000;
+    position: relative;
+    z-index: 2;
+    padding-right: 15%;
+    font-weight: 500;
+}
+nav>a{
+    color: #232628;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+.active{
+    background-color: #CC6119;
+    color: #FFFFFF;
+}
+
+
+main {
+    position: relative;
+    top: -56px;
+}
 
 /* BANNIERE */
 
-#banniereTexte{
+#banniere {
+    background-image: url(/media/vehicule1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 824px;
+}
+
+#banniereTexte {
     background-color: #232628;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
     font-weight: 800;
-   
+    min-width: 100%;
+    padding: 2em 15%;
 }
 
 #banniereTexte>p:nth-child(2){
