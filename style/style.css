@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 /*HEADER*/
 
 #enTete{
@@ -115,7 +119,6 @@ main {
     background-color: #232628;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: large;
     font-weight: 800;
     min-width: 100%;
     padding: 2em 15%;
@@ -125,20 +128,88 @@ main {
     color: #CC6119;
 }
 
+
+/* BIENVENUE */
+
+#bienvenue{
+    padding-top: 3% 
+}
+
+#textBienvenue>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#textBienvenue>h2>div{
+    color: #CC6119;
+}
+
+
 /* LOCATION ET ACHAT */
 
-#locationAchat{
+#locationAchat {
     background-image: url(../media/vehicule3.jpg);
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 30vw;
+    padding: 3% 15%;
+
+}
+#locationAchat>div{
+    padding: 3em 4em;
+    
+}
+
+#locationAchat>div>p{
+    color: #FFFFFF;
 }
 
 #location{
-    background-color: #FAB637;
+    background-color: #fab637ba;
+    margin: 1em;
 }
 
 #achat{
-    background-color: #FF4848 ;
+    background-color: #ff4848d1;
+    margin: 1em;
 }
 
+
+
+/*VEHICULES RECENTS*/
+
+#vehiculesRecents{
+    background-color: #232628;
+    color: #ffffff;
+    padding: 3% 15%;
+}
+
+/*POURQUOI NOUS CHOISIR*/
+
+#nousChoisir{
+    padding: 3% 15%;
+}
+
+#conteneurChoix{
+    padding-top: 3%;
+}
+
+#conteneurChoix>img{
+    height: 60px;
+    width: auto;
+}
+
+.itemChoix>h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.itemChoix>p{
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 500;
+    font-size: small;
+}
 
 /*VENTE ET LOCATION*/
 
@@ -146,4 +217,21 @@ main {
     background-image: url(../media/vehicule3.jpg) ;
     background-size:cover ;
     background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 30vw;
+    padding: 3% 15%;
+}
+
+#venteEtLocation>div{
+    background-color: #fab637ba;
+
+    margin: 1em;
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #232628;
+    color: #ffffff;
 }

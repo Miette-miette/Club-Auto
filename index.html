@@ -79,7 +79,7 @@
                     <img src="media/clients.jpg" alt="photo de clients comblés" class="col-5">
 
                     <div id="textBienvenue" class="col-5">
-                        <h2>BIENVENUE CHEZ CLUB AUTO</h2>
+                        <h2 class="d-flex flex-row">BIENVENUE CHEZ &nbsp;<div>CLUB AUTO</div></h2>
                         <p><strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero dui. Quisque pretium, 
                         tellus facilisis mattis ultrices, eros eros fermentum turpis. </strong></p>
                         <p>Nulla ut commodo risus, in aliquam urna. Maecenas sit amet diam semper, tempor dui sed, elementum velit. 
@@ -92,6 +92,9 @@
                     
                     <div id="textAuto" class="col-5">
                         <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
+
+                        <hr/>
+
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero dui. Quisque pretium, 
                         tellus facilisis mattis ultrices, eros eros fermentum turpis.</p>
                         <ul>
@@ -108,7 +111,7 @@
 
             </section>
 
-            <section id="locationAchat" class="container row">
+            <section id="locationAchat" class="container d-flex flex-row align-items-center justify-content-center">
                 <div id="location" class="col-5">
                     <h2>Vous souhaitez louer?</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -123,72 +126,84 @@
                 </div>
             </section>
 
-            <section id="vehiculesRecents">
+            <section id="vehiculesRecents" class="d-flex flex-column align-items-center">
                 <h2>VEHICULES RECENTS</h2>
+
+                <hr/>
+
                 <div id="conteneurVehiculesRecents" class="container row">
+                    <hr/>
 
                     <div class="vehiculeCard col-3">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div class="d-flex flex-row border-bottom">
                             <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
                             <input type="button" name="prix" id="prix">
+                            <hr/>
                         </div>
-                        
                     </div>
+
                     <div class="vehiculeCard col-3">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div class="d-flex flex-row border-bottom">
                             <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
                             <input type="button" name="prix" id="prix">
-                        </div>
-                        
+                            <hr/>
+                        </div>    
                     </div>
+
                     <div class="vehiculeCard col-3">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div class="d-flex flex-row border-bottom">
                             <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
                             <input type="button" name="prix" id="prix">
-                        </div>
-                        
+                            <hr/>
+                        </div>   
                     </div>
+
                 </div>
             </section>
 
-            <section id="nousChoisir">
+            <section id="nousChoisir" class="d-flex flex-column align-items-center ">
                 <h2>Pourquoi nous choisir?</h2>
 
-                <div id="conteneurChoix" class="d-flex flex-row">
+                <div id="conteneurChoix" class="container row">
+                    
+                    <img src="media/icon1.png" alt="icone financement" class="col-1 img-fluid h-20">
 
-                    <div class="itemChoix ">
-                        <img src="media/icon1.png" alt="icone financement">
+                    <div class="itemChoix col-2 ">
+                        
                         <h3>FINANCEMENT</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, facere?
-                             Numquam eaque tenetur illo reiciendis hic velit earum, sequi consequatur.
-                              Rem minima maiores in voluptatum ipsam vel veritatis expedita aperiam.</p>
+                             Numquam eaque tenetur illo reiciendis hic velit earum, sequi consequatur. </p>
                     </div>
+                    
+                    <img src="media/icon2.png" alt="icone réactivité" class="col-1 img-fluid w-20">
 
-                    <div class="itemChoix">
-                        <img src="media/icon2.png" alt="icone réactivité">
-                        <h3>FINANCEMENT</h3>
+                    <div class="itemChoix col-2">
+                        
+                        <h3>REACTIVITE DE L'EQUIPE TECHNIQUE</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat a cumque amet? Doloribus, laudantium!
-                             Sit, repudiandae magni! Pariatur repellat assumenda ipsum doloribus nam, 
-                             sapiente sit earum aspernatur nulla veritatis?</p>
+                             Sit, repudiandae magni! </p>
                     </div>
+                    
+                    <img src="media/icon3.png" alt="icone dialogue" class="col-1 img-fluid w-20">
 
-                    <div class="itemChoix">
-                        <img src="media/icon3.png" alt="icone dialogue">
-                        <h3>FINANCEMENT</h3>
+                    <div class="itemChoix col-2">
+                        
+                        <h3>A L'ECOUTE DE NOTRE CLIENTELE</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                             Facilis eos voluptates aliquid dolorum, nisi reiciendis alias nihil magnam corporis
-                             in officiis vel fugiat voluptatum earum culpa fuga ea dolorem ullam?</p>
+                             in officiis</p>
                     </div>
+                    
+                    <img src="media/icon4.png" alt="icone service" class="col-1 img-fluid w-20">
 
-                    <div class="itemChoix">
-                        <img src="media/icon4.png" alt="icone service">
-                        <h3>FINANCEMENT</h3>
+                    <div class="itemChoix col-2">
+                        
+                        <h3>SERVICE &amp; MAINTENANCE</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis 
-                            at id quibusdam voluptate cupiditate aspernatur, magnam dolorum inventore, 
-                            distinctio non, sed atque hic iure molestiae odio perferendis consequatur laboriosam.</p>
+                            at id quibusdam voluptate cupiditate aspernatur, magnam dolorum </p>
                     </div>
                 </div>
 
@@ -196,17 +211,19 @@
 
             </section>
 
-            <section id="venteEtLocation" >
-                <h2>CLUB AUTO<br>VENTE ET LOCATION</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ab optio hic sint autem error
+            <section id="venteEtLocation" class="container row">
+                <div class="col-4">
+                    <h2>CLUB AUTO<br>VENTE ET LOCATION</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ab optio hic sint autem error
                      earum distinctio consequatur quibusdam magni, 
                     a incidunt quasi nesciunt, tempore eius, quis in laboriosam ducimus.</p>
+                </div>
             </section>                
 
         </main>
 
-        <footer>
-            <div id="conteneurFooter">
+        <footer >
+            <div id="conteneurFooter" class="d-flex justify-content-around align-items-center">
                 <div class="itemFooter">
                     <h2>CLUB AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -231,6 +248,8 @@
                 </div>
 
             </div>
+            <hr/>
+            <p>Copyright &copy; Club Auto-Tous droits réservés</p>
         </footer>
 
 
