@@ -155,13 +155,23 @@ main {
     padding: 3% 15%;
 
 }
+
 #locationAchat>div{
     padding: 3em 4em;
     
 }
 
+#locationAchat>div>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+}
+
 #locationAchat>div>p{
     color: #FFFFFF;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 500;
+    font-size: small;
 }
 
 #location{
@@ -184,14 +194,63 @@ main {
     padding: 3% 15%;
 }
 
+#vehiculesRecents>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.hr {
+    background-color: #CC6119;
+    height: 3px;
+    width: 100%;
+    margin-top: 1%;
+}
+
+#conteneurVehiculesRecents{
+    padding-top: 3%;
+}
+
+.vehiculeCard>div{
+    background-color: #474747;
+    padding: 5%;
+    margin-top: 3%; 
+}
+
+.vehiculeCard>div>div>h3{
+    width: 50%;
+}
+
+.vehiculeCard>div>div>input{
+    background-color: #6C98E1;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    border: none;
+    padding: 2%;
+    height: 30%;
+}
+
+.hrWhite{
+    background-color: #FFFFFF;
+    height: 1px;
+    width: 100%;
+    margin-top: 5%;
+    opacity: 0.25;
+}
 /*POURQUOI NOUS CHOISIR*/
 
 #nousChoisir{
     padding: 3% 15%;
 }
 
+#nousChoisir>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
 #conteneurChoix{
-    padding-top: 3%;
+    padding: 4% 0;
 }
 
 #conteneurChoix>img{
@@ -211,6 +270,17 @@ main {
     font-size: small;
 }
 
+#contact{
+    background-color: #6C98E1;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    border: none;
+    border-radius: 3px;
+    padding: 1% 2%;
+}
+
 /*VENTE ET LOCATION*/
 
 #venteEtLocation{
@@ -222,12 +292,29 @@ main {
     padding: 3% 15%;
 }
 
-#venteEtLocation>div{
+#venteEtLocation>div {
     background-color: #fab637ba;
-
-    margin: 1em;
+    color: #ffffff;
+    margin: 3em;
+    padding: 3% 6%;
 }
 
+#venteEtLocation>div>:first-child{
+    color: #232628;
+    padding-top: 4%;
+}
+
+#venteEtLocation>div>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#venteEtLocation>div>p{
+    color: #232628;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
 
 /*FOOTER*/
 

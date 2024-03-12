@@ -4,47 +4,64 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Club Auto - Accueil</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/bootstrap.min.css">
         <link rel="stylesheet" href="style/style.css">
+
 
     </head>
 
     <body>
         <header>
-            <h1>CLUB AUTO</h1>
-            <div id="adresse">
-                <img src="media/icone-adresse.png" alt="icone position">
-                <p>ADRESSE:<br>
-                AVENUE CHARLES DE GAULLE<br>
-                75000 PARIS</p>
+            <div id="enTete" class="d-inline-flex justify-content-around align-items-center">
+                <h1 class="d-flex align-self-center">CLUB AUTO</h1>
+                
+                <div id="adresse" class="d-flex align-self-start">
+                    <img src="media/icone-adresse.png" alt="icone position">
+                    <div>
+                        <h2>ADRESSE:</h2>
+                        <p>AVENUE CHARLES DE GAULLE<br>
+                        75000 PARIS</p>
+                    </div>
+                </div>
+
+                <div id="telephone" class="d-flex align-self-start">
+                    <img src="media/icon-telephone.png" alt="icone telephone">
+                    <div>
+                        <h2>TELEPHONE:</h2>
+                        <p><strong>01 23 45 67 89</strong></p>
+                    </div>
+                </div>
+
+                <div id="horaires" class="d-flex flex-column align-items-start align-self-start">
+                    <div class="d-flex flex-row align-self-baseline">
+                        <p><div class="indication">OUVERTURE:</div> <strong> Du lundi au Samedi</strong></p>
+                    </div>
+                    <div class="d-flex flex-row align-items-baseline">
+                        <p><div class="indication">HORAIRES:</div> <strong> De 9h à 17h </strong></p>
+                    </div>
+                </div>
+
+                <div id="reseauxSociaux" class="d-flex align-self-center">
+                    <div class="bgIcon">
+                        <img src="media/facebook.svg" alt="icone facebook">
+                    </div>
+                    <div class="bgIcon">
+                        <img src="media/twitter.svg" alt="icone twitter">
+                    </div>
+                </div>
             </div>
 
-            <div id="telephone">
-                <img src="media/icon-telephone.png" alt="icone telephone">
-                <p>TELEPHONE:<br>
-                01 23 45 67 89</p>
-            </div>
-
-            <div id="horaires">
-                <p>Ouverture: Du lundi au Samedi</p>
-                <p>Horaires: De 9h à 17h</p>
-            </div>
-
-            <div id="reseaux sociaux">
-                <img src="media/" alt="icone facebook">
-                <img src="media/" alt="icone twitter">
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">ACCUEIL</a></li>
-                    <li>VENTE</li>
-                    <li>LOCATION</li>
-                    <li>CONTACT</li>
-                </ul>
-            </nav>
-            <button id="menuToggle"><img src="media/" alt="icone menu"></button>
         </header>
+        
+        <nav class="d-flex  justify-content-end" id="navbar">
+            <a href="index.html">ACCUEIL</a>
+            <a href="index.html">VENTE</a>
+            <a href="index.html">LOCATION</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
 
         <footer>
             <div id="conteneurFooter">

@@ -60,7 +60,7 @@
             <a href="index.html" class="active">ACCUEIL</a>
             <a href="index.html">VENTE</a>
             <a href="index.html">LOCATION</a>
-            <a href="index.html">CONTACT</a>
+            <a href="contact.html">CONTACT</a>
         </nav>
 
         <main>
@@ -76,9 +76,9 @@
 
             <section id="bienvenue" class="container">
                 <div class="row">
-                    <img src="media/clients.jpg" alt="photo de clients comblés" class="col-5">
+                    <img src="media/clients.jpg" alt="photo de clients comblés" class="col-6">
 
-                    <div id="textBienvenue" class="col-5">
+                    <div id="textBienvenue" class="col-6">
                         <h2 class="d-flex flex-row">BIENVENUE CHEZ &nbsp;<div>CLUB AUTO</div></h2>
                         <p><strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero dui. Quisque pretium, 
                         tellus facilisis mattis ultrices, eros eros fermentum turpis. </strong></p>
@@ -90,7 +90,7 @@
 
                 <div class="row">
                     
-                    <div id="textAuto" class="col-5">
+                    <div id="textAuto" class="col-6">
                         <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
 
                         <hr/>
@@ -106,7 +106,7 @@
                         </ul> 
                     </div>
 
-                    <img src="media/entretien.jpg" alt="photo de mécanicien qui entretien une voiture" class="col-5">
+                    <img src="media/entretien.jpg" alt="photo de mécanicien qui entretien une voiture" class="col-6">
                 </div>
 
             </section>
@@ -127,37 +127,42 @@
             </section>
 
             <section id="vehiculesRecents" class="d-flex flex-column align-items-center">
-                <h2>VEHICULES RECENTS</h2>
+                <h2 class="h1">VEHICULES RECENTS</h2>
 
-                <hr/>
+                <div class="hr"></div>
 
                 <div id="conteneurVehiculesRecents" class="container row">
-                    <hr/>
 
-                    <div class="vehiculeCard col-3">
+                    <div class="vehiculeCard col-4">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
-                        <div class="d-flex flex-row border-bottom">
-                            <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
-                            <input type="button" name="prix" id="prix">
-                            <hr/>
+                        <div >
+                            <div class="d-flex flex-row justify-content-between">
+                                <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
+                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="5500 &euro;" name="prix" id="prix">
+                            </div>
+                            <div class="hrWhite"></div>                   
                         </div>
                     </div>
 
-                    <div class="vehiculeCard col-3">
+                    <div class="vehiculeCard col-4">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
-                        <div class="d-flex flex-row border-bottom">
-                            <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
-                            <input type="button" name="prix" id="prix">
-                            <hr/>
+                        <div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
+                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="8000 &euro;" name="prix" id="prix">
+                            </div>
+                            <div class="hrWhite"></div>
                         </div>    
                     </div>
 
-                    <div class="vehiculeCard col-3">
+                    <div class="vehiculeCard col-4 ">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
-                        <div class="d-flex flex-row border-bottom">
-                            <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
-                            <input type="button" name="prix" id="prix">
-                            <hr/>
+                        <div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
+                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="9000 &euro; 8200 &euro;" name="prix" id="prix">
+                            </div>
+                            <div class="hrWhite"></div>
                         </div>   
                     </div>
 
@@ -183,8 +188,7 @@
                     <div class="itemChoix col-2">
                         
                         <h3>REACTIVITE DE L'EQUIPE TECHNIQUE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat a cumque amet? Doloribus, laudantium!
-                             Sit, repudiandae magni! </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat a cumque amet? Doloribus, laudantium! </p>
                     </div>
                     
                     <img src="media/icon3.png" alt="icone dialogue" class="col-1 img-fluid w-20">
@@ -193,8 +197,7 @@
                         
                         <h3>A L'ECOUTE DE NOTRE CLIENTELE</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Facilis eos voluptates aliquid dolorum, nisi reiciendis alias nihil magnam corporis
-                             in officiis</p>
+                            Facilis eos voluptates aliquid dolorum, nisi reiciendis alias nihil magnam</p>
                     </div>
                     
                     <img src="media/icon4.png" alt="icone service" class="col-1 img-fluid w-20">
@@ -203,17 +206,18 @@
                         
                         <h3>SERVICE &amp; MAINTENANCE</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis 
-                            at id quibusdam voluptate cupiditate aspernatur, magnam dolorum </p>
+                            at id quibusdam voluptate cupiditate aspernatur</p>
                     </div>
                 </div>
 
-                <button type="button" name="contact" id="contact">CONTACTEZ NOUS</button>
+                <input type="button" onclick="window.location.href='contact.html'" value="CONTACTEZ-NOUS" name="contact" id="contact">
 
             </section>
 
             <section id="venteEtLocation" class="container row">
-                <div class="col-4">
-                    <h2>CLUB AUTO<br>VENTE ET LOCATION</h2>
+                <div class="col-6">
+                    <h2>CLUB AUTO</h2> 
+                    <h2> VENTE ET LOCATION</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ab optio hic sint autem error
                      earum distinctio consequatur quibusdam magni, 
                     a incidunt quasi nesciunt, tempore eius, quis in laboriosam ducimus.</p>
