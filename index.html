@@ -6,9 +6,9 @@
         <title>Club Auto - Accueil</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/bootstrap.min.css">
 
 
     </head>
@@ -63,8 +63,9 @@
             <a href="contact.html">CONTACT</a>
         </nav>
 
-        <main>
-            <section id="banniere" class="d-flex align-items-end">
+        <main class="container">
+
+            <section id="banniere" class="col-12 d-flex align-items-end">
             
                 <div id="banniereTexte" class="d-flex flex-row" >
                     
@@ -74,7 +75,7 @@
                 </div>
             </section>
 
-            <section id="bienvenue" class="container">
+            <section id="bienvenue" class="col-8 container">
                 <div class="row">
                     <img src="media/clients.jpg" alt="photo de clients comblés" class="col-6">
 
@@ -88,9 +89,9 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div id="textAuto" class="row">
                     
-                    <div id="textAuto" class="col-6">
+                    <div  class="col-6">
                         <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
 
                         <hr/>
@@ -111,14 +112,14 @@
 
             </section>
 
-            <section id="locationAchat" class="container d-flex flex-row align-items-center justify-content-center">
-                <div id="location" class="col-5">
+            <section id="locationAchat" class="col-12 container d-flex flex-row align-items-center justify-content-center">
+                <div id="location" class="col-6">
                     <h2>Vous souhaitez louer?</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Labore possimus rem illo ipsam veniam laboriosam mollitia doloremque dolorem, architecto 
                         quas autem molestiae harum corrupti voluptas aperiam natus ea totam ex?</p>
                 </div>
-                <div id="achat" class="col-5">
+                <div id="achat" class="col-6">
                     <h2>Vous souhaitez achetez?</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                          Labore possimus rem illo ipsam veniam laboriosam mollitia doloremque dolorem, architecto 
@@ -126,14 +127,14 @@
                 </div>
             </section>
 
-            <section id="vehiculesRecents" class="d-flex flex-column align-items-center">
+            <section id="vehiculesRecents" class="col-12 d-flex flex-column align-items-center">
                 <h2 class="h1">VEHICULES RECENTS</h2>
 
                 <div class="hr"></div>
 
-                <div id="conteneurVehiculesRecents" class="container row">
+                <div id="conteneurVehiculesRecents" class="container row d-flex justify-content-between">
 
-                    <div class="vehiculeCard col-4">
+                    <div class="vehiculeCard col-4 ">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div >
                             <div class="d-flex flex-row justify-content-between">
@@ -169,7 +170,7 @@
                 </div>
             </section>
 
-            <section id="nousChoisir" class="d-flex flex-column align-items-center ">
+            <section id="nousChoisir" class="offset-2 col-8 d-flex flex-column align-items-center ">
                 <h2>Pourquoi nous choisir?</h2>
 
                 <div id="conteneurChoix" class="container row">
@@ -214,7 +215,7 @@
 
             </section>
 
-            <section id="venteEtLocation" class="container row">
+            <section id="venteEtLocation" class="col-12 container row">
                 <div class="col-6">
                     <h2>CLUB AUTO</h2> 
                     <h2> VENTE ET LOCATION</h2>
@@ -227,33 +228,50 @@
         </main>
 
         <footer >
-            <div id="conteneurFooter" class="d-flex justify-content-around align-items-center">
-                <div class="itemFooter">
+            <div id="conteneurFooter" class="d-inline-flex justify-content-around align-items-center">
+                <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
                     <h2>CLUB AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                          Eveniet, nesciunt placeat reiciendis eum assumenda</p>
                 </div>
 
-                <div class="itemFooter">
+                <div id="footerOuverture" class="itemFooter d-flex flex-column align-self-start">
                     <h2>HORAIRE D'OUVERTURE</h2>
                     <p><strong>lundi-samedi: </strong>09:00-17:00<br>
                     <strong>Dimanche et jours feriés:</strong> Fermé</p>
                 </div>
 
-                <div class="itemFooter">
+                <div id="newsletter" class="itemFooter d-flex flex-column align-self-start">
                     <h2>NEWSLETTER</h2>
-                    <input type="text" name="email" id="email">
-                    <p>Inscrivez-vous pour recevoir les offres</p>
+                    <input type="text" name="email" id="email" placeholder="Entrez votre email">
+                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
 
-                <div class="itemFooter">
+                <div id="footerRS" class="itemFooter d-flex flex-column align-self-start">
                     <h2>RESEAUX SOCIAUX</h2>
-                    
+
+                    <div>
+                        <button type="button">
+                            <img src="media/facebook.svg" alt="icone facebook">
+                        </button> 
+                        <button type="button">
+                            <img src="media/facebook.svg" alt="icone facebook">
+                        </button> 
+                        <button type="button">
+                            <img src="media/facebook.svg" alt="icone facebook">
+                        </button> 
+                        <button type="button">
+                            <img src="media/facebook.svg" alt="icone facebook">
+                        </button> 
+                        <button type="button">
+                            <img src="media/facebook.svg" alt="icone facebook">
+                        </button> 
+                    </div>
                 </div>
 
             </div>
             <hr/>
-            <p>Copyright &copy; Club Auto-Tous droits réservés</p>
+            <p class="d-inline-flex justify-content-around align-items-center">Copyright &copy; Club Auto-Tous droits réservés</p>
         </footer>
 
 

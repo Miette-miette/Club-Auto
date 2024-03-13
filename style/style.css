@@ -2,7 +2,12 @@ html{
     overflow-x: hidden;
 }
 
-/*HEADER*/
+main{
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/*////////// HEADER //////////*/
 
 #enTete{
     background-color: #232628;
@@ -25,7 +30,7 @@ html{
     margin: 4px;
 }
 
-/*HEADER: ADRESSE*/
+/*////////// HEADER: ADRESSE //////////*/
 
 #adresse{
     margin-top: 1em;
@@ -38,7 +43,7 @@ html{
     margin-bottom: 1%;
 }
 
-/*HEADER: TELEPHONE*/
+/*///////// /HEADER: TELEPHONE //////////*/
 
 #telephone{
     margin-top: 1em;
@@ -55,7 +60,7 @@ html{
     font-size: large;
 }
 
-/*HEADER: HORAIRES*/
+/*////////// HEADER: HORAIRES //////////*/
 
 #horaires{
     margin-top: 1em;
@@ -68,7 +73,7 @@ html{
     margin-right: 10px;
 }
 
-/* HEADER: RESEAUX SOCIAUX */
+/*////////// HEADER: RESEAUX SOCIAUX //////////*/
 
 #reseauxSociaux>div>img{
     padding: 1em;
@@ -80,7 +85,7 @@ html{
     margin-right: 2em;
 }
 
-/* NAV */
+/*////////// NAV //////////*/
 
 nav{
     background-color:rgba(255, 255, 255, 0.753);
@@ -106,7 +111,32 @@ main {
     top: -56px;
 }
 
-/* BANNIERE */
+/*////////// FOOTER //////////*/
+
+footer{
+    background-color: #232628;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    padding: 1em 15%;
+}
+
+footer>div>div>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    padding-bottom: 1%;
+}
+
+#conteneurFooter{
+    padding-top: 4%;
+}
+
+#footerClubAuto{
+    width: 25%;
+}
+
+/*////////// BANNIERE //////////*/
 
 #banniere {
     background-image: url(/media/vehicule1.jpg);
@@ -129,10 +159,10 @@ main {
 }
 
 
-/* BIENVENUE */
+/*////////// BIENVENUE //////////*/
 
 #bienvenue{
-    padding-top: 3% 
+    padding: 3% 0 0 ;
 }
 
 #textBienvenue>h2{
@@ -144,15 +174,37 @@ main {
     color: #CC6119;
 }
 
+#textBienvenue>p{
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
 
-/* LOCATION ET ACHAT */
+
+#textAuto{
+    padding: 4% 0;
+}
+
+#textAuto>div>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#textAuto>div>p{
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+/*////////// LOCATION ET ACHAT //////////*/
 
 #locationAchat {
     background-image: url(../media/vehicule3.jpg);
     background-size: cover;
     min-width: 100vw;
     min-height: 30vw;
-    padding: 3% 15%;
+    padding: 3% 18%;
 
 }
 
@@ -171,7 +223,7 @@ main {
     color: #FFFFFF;
     font-family: 'Open Sans' , sans-serif;
     font-weight: 500;
-    font-size: small;
+    font-size: medium;
 }
 
 #location{
@@ -186,7 +238,7 @@ main {
 
 
 
-/*VEHICULES RECENTS*/
+/*////////// VEHICULES RECENTS //////////*/
 
 #vehiculesRecents{
     background-color: #232628;
@@ -207,7 +259,11 @@ main {
 }
 
 #conteneurVehiculesRecents{
-    padding-top: 3%;
+    padding: 3% 0;
+}
+
+.vehiculeCard{
+    padding: 0;
 }
 
 .vehiculeCard>div{
@@ -238,10 +294,10 @@ main {
     margin-top: 5%;
     opacity: 0.25;
 }
-/*POURQUOI NOUS CHOISIR*/
+/*////////// POURQUOI NOUS CHOISIR //////////*/
 
 #nousChoisir{
-    padding: 3% 15%;
+    padding: 3% 0;
 }
 
 #nousChoisir>h2{
@@ -267,7 +323,7 @@ main {
 .itemChoix>p{
     font-family: 'Open Sans' , sans-serif;
     font-weight: 500;
-    font-size: small;
+    font-size: medium;
 }
 
 #contact{
@@ -275,13 +331,13 @@ main {
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: small;
+    font-size: medium;
     border: none;
     border-radius: 3px;
     padding: 1% 2%;
 }
 
-/*VENTE ET LOCATION*/
+/*////////// VENTE ET LOCATION //////////*/
 
 #venteEtLocation{
     background-image: url(../media/vehicule3.jpg) ;
@@ -295,7 +351,7 @@ main {
 #venteEtLocation>div {
     background-color: #fab637ba;
     color: #ffffff;
-    margin: 3em;
+    margin: 4em;
     padding: 3% 6%;
 }
 
@@ -316,9 +372,46 @@ main {
     font-size: medium;
 }
 
-/*FOOTER*/
+/*////////// PAGE CONTACT //////////*/
 
-footer{
-    background-color: #232628;
-    color: #ffffff;
+#sectionFormulaire{
+    background-image: url(../media/vehicule3.jpg) ;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 30vw;
+    padding: 3% 15%;
+}
+
+#conteneurFormulaire{
+    background-color: #FFFFFF;
+    padding: 5% 6%;
+}
+
+#conteneurFormulaire>h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#formContact>div>input{
+    border: none;
+    background-color: #e7e7e7;
+    padding: 3% 6%;
+}
+
+#formContact>div>textarea{
+    border: none;
+    background-color: #e7e7e7;
+    padding: 3% 6%;
+}
+
+#btnsubmit{
+    background-color: #6C98E1;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    border: none;
+    border-radius: 3px;
+    padding: 1% 2%;
 }

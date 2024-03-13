@@ -63,28 +63,37 @@
             <a href="contact.html" class="active">CONTACT</a>
         </nav>
 
-        <section id="conteneurFormulaire">
-            <h1>CONTACTEZ NOUS</h1>
-            <form id="formContact">
-                <label for="fName">Prénom*</label>
-                <input type="text" name="fName" id="fName" placeholder="Entrez votre prénom" required>
+        <section id="sectionFormulaire" >
+            <div id="conteneurFormulaire">
+                <h1>CONTACTEZ NOUS</h1>
+                <form id="formContact" class="container row">
 
-                <label for="lName">Nom*</label>
-                <input type="text" name="lName" id="lName" placeholder="Entrez votre nom" required>
+                    <div class="col-4 d-flex flex-column">
+                        <label for="fName">Prénom*</label>
+                        <input type="text" name="fName" id="fName" placeholder="Entrez votre prénom" required>
+                    
+                        <label for="mail">Email*</label>
+                        <input type="text" name="mail" id="mail" placeholder="Entrez une adresse mail valide" required>
+                    </div>
+                    
+                    <div class="col-4 d-flex flex-column">
+                        <label for="lName">Nom*</label>
+                        <input type="text" name="lName" id="lName" placeholder="Entrez votre nom" required>
 
-                <label for="mail">Email*</label>
-                <input type="text" name="mail" id="mail" placeholder="Entrez une adresse mail valide" required>
+                        <label for="telephone">Téléphone</label>
+                        <input type="text" name="telephone" id="formTelephone" placeholder="Numéro de téléphone">
+                    </div>
 
-                <label for="telephone">Téléphone</label>
-                <input type="text" name="telephone" id="telephone" placeholder="Numéro de téléphone">
+                    <div class="col-4 d-flex flex-column">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Entrez votre message"></textarea>
+                        
+                        <button id="btnsubmit" type="submit"> ENVOYEZ </button>
+                    </div>
 
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Entrez votre message"></textarea>
-                </div>
-
-                <button type="submit"> ENVOYEZ </button>
-            </form>
+                    
+                </form>
+            </div>
 
         </section>
 
