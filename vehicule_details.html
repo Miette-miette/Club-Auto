@@ -77,10 +77,17 @@
                 <img src="media/vehicule2.jpg" alt="photo de BMW 535i">
             </section>
 
+            <section id="listeOnglet" class="d-flex flex-row">
+                <h2>DESCRIPTION</h2>
+                <h2>TECHNIQUE</h2>
+                <h2>OPTION</h2>
+                <h2>CONTACT</h2>
+            </section>
+
             <section id="ongletInformationProduit">
 
                 <div id="description">
-                    <h2>DESCRIPTION</h2>
+                    
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam facilis laudantium aliquam minus aut, 
                         debitis dolor optio eligendi et porro architecto maxime vel aperiam quis cumque sequi quos dicta!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe recusandae dolores quidem quos 
@@ -88,6 +95,7 @@
                         voluptatum ex amet? Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Laudantium, autem quod fuga ducimus aperiam tempore ipsam quaerat magni eius laborum inventore 
                         dolorem amet accusamus dolore illum illo! Iure, exercitationem enim!</p>
+                    <div id="rectangleOrange"></div>
                     <p><em>Similique eveniet laudantium adipisci iure rerum fuga labore facere, 
                         earum molestias veniam, odio dolores deleniti voluptates est distinctio. 
                         Cum laboriosam </em></p>
@@ -101,42 +109,67 @@
 
             <section id="option">
                 <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li><img src="media/check.svg" alt="icone check"> Lorem ipsum dolor sit amet.</li>
+                    <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
+                    <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
+                    <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
+                    <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                 </ul>
             </section>
 
         </main>
 
-        <footer>
-            <div id="conteneurFooter">
-                <div class="itemFooter">
-                    <h2>CLUB AUTO</h2>
+        <footer >
+            <div id="conteneurFooter" class="d-inline-flex justify-content-around align-items-center">
+                <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
+                    <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                          Eveniet, nesciunt placeat reiciendis eum assumenda</p>
                 </div>
 
-                <div class="itemFooter">
+                <div id="footerOuverture" class="itemFooter d-flex flex-column align-self-start">
                     <h2>HORAIRE D'OUVERTURE</h2>
                     <p><strong>lundi-samedi: </strong>09:00-17:00<br>
                     <strong>Dimanche et jours feriés:</strong> Fermé</p>
                 </div>
 
-                <div class="itemFooter">
+                <div id="newsletter" class="itemFooter d-flex flex-column align-self-start">
                     <h2>NEWSLETTER</h2>
-                    <input type="text" name="email" id="email">
-                    <p>Inscrivez-vous pour recevoir les offres</p>
+                    <div id="newsletterMail" class="d-flex flex-row">
+                        <input type="text" name="email" id="email" placeholder="Entrez votre email">
+                        <div class="d-flex">
+                            <img src="media/rss-fill.svg" alt="icone rss" id="iconRSS">
+                        </div>
+                    </div>
+                    
+                    <p>Inscrivez-vous pour recevoir les<br/> dernières offres</p>
                 </div>
 
-                <div class="itemFooter">
+                <div id="footerRS" class="itemFooter d-flex flex-column align-self-start">
                     <h2>RESEAUX SOCIAUX</h2>
-                    
+
+                    <div class="container d-flex justify-content-start ">
+                        <button type="button" class="col-2 ">
+                            <img src="media/facebook.svg" alt="icone facebook">
+                        </button> 
+                        <button type="button" class="col-2">
+                            <img src="media/twitter.svg" alt="icone twitter">
+                        </button> 
+                        <button type="button" class="col-2">
+                            <img src="media/instagram.svg" alt="icone instagram">
+                        </button> 
+                        <button type="button" class="col-2">
+                            <img src="media/google.svg" alt="icone googleplus">
+                        </button> 
+                        <button type="button" class="col-2">
+                            <img src="media/youtube.svg" alt="icone youtube">
+                        </button> 
+                    </div>
                 </div>
 
             </div>
+            <hr/>
+            <p class="d-inline-flex justify-content-around align-items-center">Copyright &copy; Club Auto-Tous droits réservés</p>
         </footer>
 
     </body>

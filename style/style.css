@@ -82,7 +82,7 @@ main{
 .bgIcon{
     background-color: rgba(155, 155, 155, 0.144) ;
     border-radius: 50%;
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 /*////////// NAV //////////*/
@@ -134,6 +134,51 @@ footer>div>div>h2{
 
 #footerClubAuto{
     width: 25%;
+}
+
+.itemFooter{
+    width: 25%;
+    padding:0 1%;
+}
+
+#footerClubAuto>h2>div{
+    color: #6C98E1;
+}
+
+#conteneurFooter>div>p{
+    color:#b3b3b3 ;
+    font-size: small;
+}
+
+footer>p{
+    color:#b3b3b3 ;
+    font-size: small;
+    width: 100%;
+}
+
+#newsletterMail>div{
+    background-color: #CC6119;
+    width: 30px;
+}
+#iconRSS{
+    padding: 20%;
+}
+
+#footerRS>div{
+    padding: 0;
+}
+
+#footerRS>div>button{
+    width: fit-content;
+    border: none;
+    margin: 1%;
+    background-color: #474747;
+    width: 40px;
+    height: 40px;
+} 
+
+#footerRS>div>button>img{
+    padding: 0;
 }
 
 /*////////// BANNIERE //////////*/
@@ -194,6 +239,10 @@ footer>div>div>h2{
     font-family: 'Open Sans' , sans-serif;
     font-weight: 500;
     font-size: medium;
+}
+
+li{
+    list-style: none;
 }
 
 
@@ -386,11 +435,17 @@ footer>div>div>h2{
 #conteneurFormulaire{
     background-color: #FFFFFF;
     padding: 5% 6%;
+    box-shadow: -2px 1px 13px 0px rgba(0,0,0,0.75);
 }
 
 #conteneurFormulaire>h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    
+}
+
+#formContact{
+    padding: 0;
 }
 
 #formContact>div>input{
@@ -405,6 +460,14 @@ footer>div>div>h2{
     padding: 3% 6%;
 }
 
+#formContact>div>label{
+    padding-top: 8%;
+}
+
+#message{
+    height: 100%;
+}
+
 #btnsubmit{
     background-color: #6C98E1;
     color: #FFFFFF;
@@ -414,4 +477,12 @@ footer>div>div>h2{
     border: none;
     border-radius: 3px;
     padding: 1% 2%;
+    margin-top: 2%;
+}
+
+/*////////// PAGE DETAILS VEHICULE //////////*/
+
+#listeOnglet{
+    background-color: #232628;
+    color: #ffffff;
 }

@@ -99,11 +99,11 @@
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero dui. Quisque pretium, 
                         tellus facilisis mattis ultrices, eros eros fermentum turpis.</p>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li><img src="media/check.svg" alt="icone check"> Lorem ipsum dolor sit amet.</li>
+                            <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
+                            <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
+                            <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
+                            <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                         </ul> 
                     </div>
 
@@ -230,7 +230,7 @@
         <footer >
             <div id="conteneurFooter" class="d-inline-flex justify-content-around align-items-center">
                 <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
-                    <h2>CLUB AUTO</h2>
+                    <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                          Eveniet, nesciunt placeat reiciendis eum assumenda</p>
                 </div>
@@ -243,28 +243,34 @@
 
                 <div id="newsletter" class="itemFooter d-flex flex-column align-self-start">
                     <h2>NEWSLETTER</h2>
-                    <input type="text" name="email" id="email" placeholder="Entrez votre email">
-                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                    <div id="newsletterMail" class="d-flex flex-row">
+                        <input type="text" name="email" id="email" placeholder="Entrez votre email">
+                        <div class="d-flex">
+                            <img src="media/rss-fill.svg" alt="icone rss" id="iconRSS">
+                        </div>
+                    </div>
+                    
+                    <p>Inscrivez-vous pour recevoir les<br/> dernières offres</p>
                 </div>
 
                 <div id="footerRS" class="itemFooter d-flex flex-column align-self-start">
                     <h2>RESEAUX SOCIAUX</h2>
 
-                    <div>
-                        <button type="button">
+                    <div class="container d-flex justify-content-start ">
+                        <button type="button" class="col-2 ">
                             <img src="media/facebook.svg" alt="icone facebook">
                         </button> 
-                        <button type="button">
-                            <img src="media/facebook.svg" alt="icone facebook">
+                        <button type="button" class="col-2">
+                            <img src="media/twitter.svg" alt="icone twitter">
                         </button> 
-                        <button type="button">
-                            <img src="media/facebook.svg" alt="icone facebook">
+                        <button type="button" class="col-2">
+                            <img src="media/instagram.svg" alt="icone instagram">
                         </button> 
-                        <button type="button">
-                            <img src="media/facebook.svg" alt="icone facebook">
+                        <button type="button" class="col-2">
+                            <img src="media/google.svg" alt="icone googleplus">
                         </button> 
-                        <button type="button">
-                            <img src="media/facebook.svg" alt="icone facebook">
+                        <button type="button" class="col-2">
+                            <img src="media/youtube.svg" alt="icone youtube">
                         </button> 
                     </div>
                 </div>
