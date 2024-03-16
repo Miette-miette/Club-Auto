@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/mediaqueries.css">
         <link rel="stylesheet" href="style/bootstrap.min.css">
 
 
@@ -15,10 +16,10 @@
 
     <body>
         <header>
-            <div id="enTete" class="d-inline-flex justify-content-around align-items-center">
-                <h1 class="d-flex align-self-center">CLUB AUTO</h1>
+            <div id="enTete" class="d-flex justify-content-around align-items-center ">
+                <h1 class="d-none d-xl-flex align-self-center ">CLUB AUTO</h1>
                 
-                <div id="adresse" class="d-flex align-self-start">
+                <div id="adresse" class="d-none d-xl-flex align-self-start ">
                     <img src="media/icone-adresse.png" alt="icone position">
                     <div>
                         <h2>ADRESSE:</h2>
@@ -35,7 +36,7 @@
                     </div>
                 </div>
 
-                <div id="horaires" class="d-flex flex-column align-items-start align-self-start">
+                <div id="horaires" class="d-none d-xl-flex flex-column align-items-start align-self-start">
                     <div class="d-flex flex-row align-self-baseline">
                         <p><div class="indication">OUVERTURE:</div> <strong> Du lundi au Samedi</strong></p>
                     </div>
@@ -44,7 +45,7 @@
                     </div>
                 </div>
 
-                <div id="reseauxSociaux" class="d-flex align-self-center">
+                <div id="reseauxSociaux" class="d-none d-xl-flex d-flex align-self-center">
                     <div class="bgIcon">
                         <img src="media/facebook.svg" alt="icone facebook">
                     </div>
@@ -56,7 +57,7 @@
 
         </header>
         
-        <nav class="d-flex  justify-content-end" id="navbar">
+        <nav class="d-none d-xl-flex justify-content-end" id="navbar">
             <a href="index.html" class="active">ACCUEIL</a>
             <a href="index.html">VENTE</a>
             <a href="index.html">LOCATION</a>
@@ -65,22 +66,21 @@
 
         <main class="container">
 
-            <section id="banniere" class="col-12 d-flex align-items-end">
+            <section id="banniere" class="col-12 d-inline-flex align-items-end">
             
-                <div id="banniereTexte" class="d-flex flex-row" >
+                <div id="banniereTexte" class="d-inline-flex flex-row flex-wrap" >
                     
-                    <p class="h2"><strong> CLUB AUTO &nbsp; </strong></p>
-                    <p class="h2"><strong>LE MEILLEUR DE L'AUTOMOBILE</strong></p>
+                    <p class="h1"><strong><span> CLUB AUTO </span>&nbsp;LE MEILLEUR DE L'AUTOMOBILE</strong></p>
 
                 </div>
             </section>
 
-            <section id="bienvenue" class="col-8 container">
-                <div class="row">
-                    <img src="media/clients.jpg" alt="photo de clients comblés" class="col-6">
+            <section id="bienvenue" class="container-xl col-xl-8  d-flex flex-column">
+                <div class="d-xl-flex flex-xl-row">
+                    <img src="media/clients.jpg" alt="photo de clients comblés" class="col-xl-6">
 
-                    <div id="textBienvenue" class="col-6">
-                        <h2 class="d-flex flex-row">BIENVENUE CHEZ &nbsp;<div>CLUB AUTO</div></h2>
+                    <div id="textBienvenue" class="col-xl-6">
+                        <h2>BIENVENUE CHEZ &nbsp;<span>CLUB AUTO</span></h2>
                         <p><strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero dui. Quisque pretium, 
                         tellus facilisis mattis ultrices, eros eros fermentum turpis. </strong></p>
                         <p>Nulla ut commodo risus, in aliquam urna. Maecenas sit amet diam semper, tempor dui sed, elementum velit. 
@@ -89,9 +89,9 @@
                     </div>
                 </div>
 
-                <div id="textAuto" class="row">
+                <div id="textAuto" class="d-xl-flex flex-xl-row">
                     
-                    <div  class="col-6">
+                    <div  class="col-xl-6">
                         <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
 
                         <hr/>
@@ -107,19 +107,19 @@
                         </ul> 
                     </div>
 
-                    <img src="media/entretien.jpg" alt="photo de mécanicien qui entretien une voiture" class="col-6">
+                    <img src="media/entretien.jpg" alt="photo de mécanicien qui entretien une voiture" class="col-md-6">
                 </div>
 
             </section>
 
-            <section id="locationAchat" class="col-12 container d-flex flex-row align-items-center justify-content-center">
-                <div id="location" class="col-6">
+            <section id="locationAchat" class="container-lg col-lg-12 d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                <div id="location" class="col-lg-6 col-12">
                     <h2>Vous souhaitez louer?</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Labore possimus rem illo ipsam veniam laboriosam mollitia doloremque dolorem, architecto 
                         quas autem molestiae harum corrupti voluptas aperiam natus ea totam ex?</p>
                 </div>
-                <div id="achat" class="col-6">
+                <div id="achat" class="col-lg-6 col-12">
                     <h2>Vous souhaitez achetez?</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                          Labore possimus rem illo ipsam veniam laboriosam mollitia doloremque dolorem, architecto 
@@ -134,7 +134,7 @@
 
                 <div id="conteneurVehiculesRecents" class="container row d-flex justify-content-between">
 
-                    <div class="vehiculeCard col-4 ">
+                    <div class="vehiculeCard col-lg-4 ">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div >
                             <div class="d-flex flex-row justify-content-between">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="vehiculeCard col-4">
+                    <div class="vehiculeCard d-none d-lg-block col-lg-4 ">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div>
                             <div class="d-flex flex-row justify-content-between">
@@ -156,7 +156,7 @@
                         </div>    
                     </div>
 
-                    <div class="vehiculeCard col-4 ">
+                    <div class="vehiculeCard d-none d-lg-block col-lg-4 ">
                         <img src="media/vehicule2.jpg" alt="photo de voiture" class="img-fluid">
                         <div>
                             <div class="d-flex flex-row justify-content-between">
@@ -170,44 +170,52 @@
                 </div>
             </section>
 
-            <section id="nousChoisir" class="offset-2 col-8 d-flex flex-column align-items-center ">
+            <section id="nousChoisir" class="offset-lg-2 col-lg-8 d-flex flex-column align-items-center ">
                 <h2>Pourquoi nous choisir?</h2>
 
-                <div id="conteneurChoix" class="container row">
-                    
-                    <img src="media/icon1.png" alt="icone financement" class="col-1 img-fluid h-20">
+                <div id="conteneurChoix" class="container flex-lg-row d-flex flex-column ">
 
-                    <div class="itemChoix col-2 ">
+                    <div class="d-flex flex-row">
+                        <img src="media/icon1.png" alt="icone financement" class="img-fluid h-20 ">
+
+                        <div class="itemChoix ">
                         
-                        <h3>FINANCEMENT</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, facere?
+                            <h3>FINANCEMENT</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, facere?
                              Numquam eaque tenetur illo reiciendis hic velit earum, sequi consequatur. </p>
+                        </div>
                     </div>
-                    
-                    <img src="media/icon2.png" alt="icone réactivité" class="col-1 img-fluid w-20">
 
-                    <div class="itemChoix col-2">
+                    <div class="d-flex flex-row">
+                        <img src="media/icon2.png" alt="icone réactivité" class=" img-fluid w-20" >
+
+                        <div class="itemChoix ">
                         
-                        <h3>REACTIVITE DE L'EQUIPE TECHNIQUE</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat a cumque amet? Doloribus, laudantium! </p>
+                            <h3>REACTIVITE DE L'EQUIPE TECHNIQUE</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat a cumque amet? Doloribus, laudantium! </p>
+                        </div>
                     </div>
-                    
-                    <img src="media/icon3.png" alt="icone dialogue" class="col-1 img-fluid w-20">
 
-                    <div class="itemChoix col-2">
+                    <div class="d-flex flex-row">
+                        <img src="media/icon3.png" alt="icone dialogue" class=" img-fluid w-20 ">
+
+                        <div class="itemChoix">
                         
-                        <h3>A L'ECOUTE DE NOTRE CLIENTELE</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            <h3>A L'ECOUTE DE NOTRE CLIENTELE</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                             Facilis eos voluptates aliquid dolorum, nisi reiciendis alias nihil magnam</p>
+                        </div>
                     </div>
-                    
-                    <img src="media/icon4.png" alt="icone service" class="col-1 img-fluid w-20">
 
-                    <div class="itemChoix col-2">
+                    <div class="d-flex flex-row">
+                        <img src="media/icon4.png" alt="icone service" class=" img-fluid w-20 ">
+
+                        <div class="itemChoix">
                         
-                        <h3>SERVICE &amp; MAINTENANCE</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis 
+                            <h3>SERVICE &amp; MAINTENANCE</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt reiciendis 
                             at id quibusdam voluptate cupiditate aspernatur</p>
+                        </div>
                     </div>
                 </div>
 
@@ -215,8 +223,8 @@
 
             </section>
 
-            <section id="venteEtLocation" class="col-12 container row">
-                <div class="col-6">
+            <section id="venteEtLocation" class="col-lg-12 container-lg row">
+                <div class="col-lg-6 col-12">
                     <h2>CLUB AUTO</h2> 
                     <h2> VENTE ET LOCATION</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ab optio hic sint autem error
@@ -228,7 +236,7 @@
         </main>
 
         <footer >
-            <div id="conteneurFooter" class="d-inline-flex justify-content-around align-items-center">
+            <div id="conteneurFooter" class="d-lg-flex flex-lg-row flex-column justify-content-around align-items-center">
                 <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
                     <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.

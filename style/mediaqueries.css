@@ -1,0 +1,59 @@
+@media (max-width: 1200px) { 
+
+main{
+    top: 0;
+    overflow: hidden;
+}
+
+#banniere {
+    background-image: none;
+    height: 100%;
+}
+
+#bienvenue{
+    padding:10%;
+}
+
+#bienvenue>div>img{
+    width: 100%;
+}
+#textBienvenue{
+    width: 100%;
+}
+
+#textAuto{
+    width: 100%;
+}
+
+#textAuto>div>img{
+    width: 100%;
+}
+
+#locationAchat{
+    padding: 0;
+}
+#venteEtLocation {
+    padding: 5% 0; 
+    width: 100%;
+}
+#venteEtLocation>div {
+   
+    margin: 0;
+}
+
+#footerClubAuto{
+    width: 100%;
+}
+
+#footerOuverture{
+    width: 100%;
+}
+
+#newsletter{
+    width: 100%;
+}
+
+#footerRS{
+    width: 100%;
+}
+}

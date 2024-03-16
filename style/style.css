@@ -192,15 +192,15 @@ footer>p{
 
 #banniereTexte {
     background-color: #232628;
-    color: #FFFFFF;
+    color: #CC6119;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     min-width: 100%;
     padding: 2em 15%;
 }
 
-#banniereTexte>p:nth-child(2){
-    color: #CC6119;
+#banniereTexte>p>strong>span{
+    color: #FFFFFF;
 }
 
 
@@ -210,12 +210,16 @@ footer>p{
     padding: 3% 0 0 ;
 }
 
+#textBienvenue{
+    padding-left: 3%;
+}
+
 #textBienvenue>h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
 
-#textBienvenue>h2>div{
+#textBienvenue>h2>span{
     color: #CC6119;
 }
 
@@ -228,6 +232,10 @@ footer>p{
 
 #textAuto{
     padding: 4% 0;
+}
+
+#textAuto>div{
+    padding-right:3% ;
 }
 
 #textAuto>div>h2{
@@ -358,9 +366,10 @@ li{
     padding: 4% 0;
 }
 
-#conteneurChoix>img{
+#conteneurChoix>div>img{
     height: 60px;
     width: auto;
+    padding: 0 5%;
 }
 
 .itemChoix>h3{
