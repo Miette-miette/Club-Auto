@@ -56,12 +56,21 @@
             </div>
 
         </header>
-        
-        <nav class="d-none d-xl-flex justify-content-end" id="navbar">
-            <a href="index.html" class="active">ACCUEIL</a>
-            <a href="index.html">VENTE</a>
-            <a href="index.html">LOCATION</a>
-            <a href="contact.html">CONTACT</a>
+
+        <nav class="navbar navbar-expand-md">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" 
+            aria-expanded="false" aria-label="Toggle navigation" id="btnNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="collapse navbar-collapse" id="navbar-content" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">ACCUEIL</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">VENTE</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">LOCATION</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+                </ul>
+                
+            </span>
         </nav>
 
         <main class="container">
@@ -99,7 +108,7 @@
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero dui. Quisque pretium, 
                         tellus facilisis mattis ultrices, eros eros fermentum turpis.</p>
                         <ul>
-                            <li><img src="media/check.svg" alt="icone check"> Lorem ipsum dolor sit amet.</li>
+                            <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                             <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                             <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                             <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
@@ -173,7 +182,7 @@
             <section id="nousChoisir" class="offset-lg-2 col-lg-8 d-flex flex-column align-items-center ">
                 <h2>Pourquoi nous choisir?</h2>
 
-                <div id="conteneurChoix" class="container flex-lg-row d-flex flex-column ">
+                <div id="conteneurChoix" class="container flex-xl-row d-flex flex-column ">
 
                     <div class="d-flex flex-row">
                         <img src="media/icon1.png" alt="icone financement" class="img-fluid h-20 ">

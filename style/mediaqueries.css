@@ -5,11 +5,16 @@ main{
     overflow: hidden;
 }
 
+
+
+/*////////// BANNIERE //////////*/
+
 #banniere {
     background-image: none;
     height: 100%;
 }
 
+/*////////// BIENVENUE //////////*/
 #bienvenue{
     padding:10%;
 }
@@ -39,6 +44,29 @@ main{
 #venteEtLocation>div {
    
     margin: 0;
+}
+
+#nousChoisir {
+    padding: 10% 0;
+}
+
+#conteneurChoix {
+    padding: 8% 14% 8% 8%;
+}
+
+#btnsubmit{
+    width: 70%;
+    margin-top: 10%;
+}
+
+/*////////// PAGE DETAILS VEHICULE //////////*/
+
+#listeOnglet{
+    height: 100%;
+}
+
+#listeOnglet>button{
+    padding: 3% 0;
 }
 
 #footerClubAuto{

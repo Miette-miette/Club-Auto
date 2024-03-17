@@ -3,22 +3,22 @@
     <head lang="fr">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Club Auto - Accueil</title>
+        <title>Club Auto - BMW 535i</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style/bootstrap.min.css">
         <link rel="stylesheet" href="style/style.css">
-
+        <link rel="stylesheet" href="style/mediaqueries.css">
+        <link rel="stylesheet" href="style/bootstrap.min.css">
 
     </head>
 
     <body>
         <header>
-            <div id="enTete" class="d-inline-flex justify-content-around align-items-center">
-                <h1 class="d-flex align-self-center">CLUB AUTO</h1>
+            <div id="enTete" class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                <h1 class="d-flex align-self-center ">CLUB AUTO</h1>
                 
-                <div id="adresse" class="d-flex align-self-start">
+                <div id="adresse" class="d-none d-xl-flex align-self-start ">
                     <img src="media/icone-adresse.png" alt="icone position">
                     <div>
                         <h2>ADRESSE:</h2>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div id="horaires" class="d-flex flex-column align-items-start align-self-start">
+                <div id="horaires" class="d-none d-xl-flex flex-column align-items-start align-self-start">
                     <div class="d-flex flex-row align-self-baseline">
                         <p><div class="indication">OUVERTURE:</div> <strong> Du lundi au Samedi</strong></p>
                     </div>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div id="reseauxSociaux" class="d-flex align-self-center">
+                <div id="reseauxSociaux" class="d-none d-xl-flex d-flex align-self-center">
                     <div class="bgIcon">
                         <img src="media/facebook.svg" alt="icone facebook">
                     </div>
@@ -57,48 +57,56 @@
         </header>
         
         <nav class="d-flex  justify-content-end" id="navbar">
-            <a href="index.html">ACCUEIL</a>
-            <a href="index.html">VENTE</a>
-            <a href="index.html">LOCATION</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="index.html" title="Accueil">ACCUEIL</a>
+            <a href="index.html" title="Vente">VENTE</a>
+            <a href="index.html" title="Location">LOCATION</a>
+            <a href="contact.html" title="Contact">CONTACT</a>
         </nav>
 
-        <main id="ficheProduit">
-            <section id="filAriane">
+        <main id="ficheProduit" class="container">
+            <section id="filAriane" class="offset-lg-2 col-lg-6 offset-1 col-10">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">ACCUEIL</li>
                     <li class="breadcrumb-item">VENTE</li>
                     <li class="breadcrumb-item">BMW 5351, NAVI, LEATHER, ABS</li>
                 </ol>
+                <hr/>
             </section>
 
-            <section id="visuelProduit">
+            
+
+            <section id="visuelProduit" class="offset-lg-2 col-lg-6 offset-1 col-10">
                 <h1>BMW 535i, Navi, Leather, ABS</h1>
-                <img src="media/vehicule2.jpg" alt="photo de BMW 535i">
+                <img src="media/vehicule2.jpg" alt="photo de BMW 535i" class="col-12">
             </section>
 
-            <section id="listeOnglet" class="d-flex flex-row">
-                <h2>DESCRIPTION</h2>
-                <h2>TECHNIQUE</h2>
-                <h2>OPTION</h2>
-                <h2>CONTACT</h2>
+            <section id="listeOnglet" class="offset-lg-2 col-lg-6 offset-1 col-10 d-flex flex-lg-row flex-column">
+
+                <button type="button" class="ongletActif">DESCRIPTION</button>
+                <button type="button">TECHNIQUE</button>
+                <button type="button">OPTIONS</button>
+                <button type="button">CONTACT</button>
             </section>
 
-            <section id="ongletInformationProduit">
+            <section id="ongletInformationProduit" class="offset-lg-2 col-lg-6 offset-1 col-10">
 
                 <div id="description">
                     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam facilis laudantium aliquam minus aut, 
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam facilis laudantium aliquam minus aut, 
                         debitis dolor optio eligendi et porro architecto maxime vel aperiam quis cumque sequi quos dicta!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe recusandae dolores quidem quos 
                         error omnis laudantium corrupti odit minima? Odit suscipit asperiores itaque! Alias animi est 
                         voluptatum ex amet? Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Laudantium, autem quod fuga ducimus aperiam tempore ipsam quaerat magni eius laborum inventore 
                         dolorem amet accusamus dolore illum illo! Iure, exercitationem enim!</p>
-                    <div id="rectangleOrange"></div>
-                    <p><em>Similique eveniet laudantium adipisci iure rerum fuga labore facere, 
+
+                    <div class="d-flex flex-row">
+                        <div id="rectangleOrange"></div>
+                        <p id="textImportant"><em>Similique eveniet laudantium adipisci iure rerum fuga labore facere, 
                         earum molestias veniam, odio dolores deleniti voluptates est distinctio. 
                         Cum laboriosam </em></p>
+                    </div>
+
                     <p>Tempore, quas ut? Molestias, harum quam nulla deleniti provident impedit et 
                         cum rem, odio excepturi perferendis hic delectus eligendi rerum animi inventore, 
                         numquam eaque repellendus iure voluptatum sint! Animi, eos!</p>
@@ -107,9 +115,10 @@
 
             </section>
 
-            <section id="option">
+            <section id="option" class="offset-lg-2 col-lg-6 offset-1 col-10">
+                <h2 class="h5">OPTIONS</h2>
                 <ul>
-                    <li><img src="media/check.svg" alt="icone check"> Lorem ipsum dolor sit amet.</li>
+                    <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                     <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                     <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
                     <li><img src="media/check.svg" alt="icone check">Lorem ipsum dolor sit amet.</li>
@@ -120,7 +129,7 @@
         </main>
 
         <footer >
-            <div id="conteneurFooter" class="d-inline-flex justify-content-around align-items-center">
+            <div id="conteneurFooter" class="d-lg-flex flex-lg-row flex-column justify-content-around align-items-center">
                 <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
                     <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.

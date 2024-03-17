@@ -3,22 +3,23 @@
     <head lang="fr">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Club Auto - Accueil</title>
+        <title>Club Auto - Contact</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style/bootstrap.min.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/mediaqueries.css">
+        <link rel="stylesheet" href="style/bootstrap.min.css">
 
 
     </head>
 
     <body>
         <header>
-            <div id="enTete" class="d-inline-flex justify-content-around align-items-center">
-                <h1 class="d-flex align-self-center">CLUB AUTO</h1>
+            <div id="enTete" class="d-flex justify-content-around align-items-center flex-column flex-lg-row">
+                <h1 class="d-flex align-self-center ">CLUB AUTO</h1>
                 
-                <div id="adresse" class="d-flex align-self-start">
+                <div id="adresse" class="d-none d-xl-flex align-self-start ">
                     <img src="media/icone-adresse.png" alt="icone position">
                     <div>
                         <h2>ADRESSE:</h2>
@@ -35,7 +36,7 @@
                     </div>
                 </div>
 
-                <div id="horaires" class="d-flex flex-column align-items-start align-self-start">
+                <div id="horaires" class="d-none d-xl-flex flex-column align-items-start align-self-start">
                     <div class="d-flex flex-row align-self-baseline">
                         <p><div class="indication">OUVERTURE:</div> <strong> Du lundi au Samedi</strong></p>
                     </div>
@@ -44,7 +45,7 @@
                     </div>
                 </div>
 
-                <div id="reseauxSociaux" class="d-flex align-self-center">
+                <div id="reseauxSociaux" class="d-none d-xl-flex d-flex align-self-center">
                     <div class="bgIcon">
                         <img src="media/facebook.svg" alt="icone facebook">
                     </div>
@@ -66,9 +67,9 @@
         <section id="sectionFormulaire" >
             <div id="conteneurFormulaire">
                 <h1>CONTACTEZ NOUS</h1>
-                <form id="formContact" class="container row">
+                <form id="formContact" class="container d-flex flex-lg-row  flex-column">
 
-                    <div class="col-4 d-flex flex-column">
+                    <div class="col-lg-4 d-flex flex-column">
                         <label for="fName">Prénom*</label>
                         <input type="text" name="fName" id="fName" placeholder="Entrez votre prénom" required>
                     
@@ -76,7 +77,7 @@
                         <input type="text" name="mail" id="mail" placeholder="Entrez une adresse mail valide" required>
                     </div>
                     
-                    <div class="col-4 d-flex flex-column">
+                    <div class="col-lg-4 d-flex flex-column">
                         <label for="lName">Nom*</label>
                         <input type="text" name="lName" id="lName" placeholder="Entrez votre nom" required>
 
@@ -84,21 +85,22 @@
                         <input type="text" name="telephone" id="formTelephone" placeholder="Numéro de téléphone">
                     </div>
 
-                    <div class="col-4 d-flex flex-column ">
-                        <label for="message">Message</label>
-                        <textarea class="d-flex align-self-stretch" name="message" id="message" placeholder="Entrez votre message"></textarea>
-                        
-                        
+                    <div class="col-lg-4 d-flex flex-column">       
+                        <div id="formMessage" class="d-flex flex-column ">
+                            <label for="message">Message</label>
+                            <textarea class="d-flex align-self-stretch" name="message" id="message" placeholder="Entrez votre message"></textarea>
+                        </div>
+
+                        <button id="btnsubmit" type="submit"> ENVOYEZ </button>
                     </div>
 
-                    <button class="offset-8 col-2" id="btnsubmit" type="submit"> ENVOYEZ </button>
                 </form>
             </div>
 
         </section>
 
         <footer >
-            <div id="conteneurFooter" class="d-inline-flex justify-content-around align-items-center">
+            <div id="conteneurFooter" class="d-lg-flex flex-lg-row flex-column justify-content-around align-items-center">
                 <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
                     <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.

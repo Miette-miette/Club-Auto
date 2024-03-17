@@ -85,7 +85,7 @@ main{
     margin-right: 1em;
 }
 
-/*////////// NAV //////////*/
+/*////////// NAV //////////
 
 nav{
     background-color:rgba(255, 255, 255, 0.753);
@@ -111,7 +111,7 @@ main {
     top: -56px;
 }
 
-/*////////// FOOTER //////////*/
+////////// FOOTER //////////*/
 
 footer{
     background-color: #232628;
@@ -457,41 +457,128 @@ li{
     padding: 0;
 }
 
+#formContact>div{
+    padding: 0 2%;
+}
+
 #formContact>div>input{
     border: none;
     background-color: #e7e7e7;
     padding: 3% 6%;
 }
 
-#formContact>div>textarea{
+#formContact>div>div>textarea{
     border: none;
     background-color: #e7e7e7;
     padding: 3% 6%;
+    height: 130px;
 }
 
 #formContact>div>label{
     padding-top: 8%;
 }
 
+#formContact>div>div>label{
+    padding-top: 8%;
+}
+
+#formMessage{
+    width: 100%;
+}
+
 #message{
     height: 100%;
 }
 
-#btnsubmit{
+#btnsubmit {
     background-color: #6C98E1;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: medium;
-    border: none;
+    font-size: small;
     border-radius: 3px;
-    padding: 1% 2%;
+    padding: 5% 6%;
     margin-top: 2%;
+    width: 40%;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #0054d3;
+    
 }
 
 /*////////// PAGE DETAILS VEHICULE //////////*/
 
-#listeOnglet{
+#ficheProduit{
+    top: 0;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 500;
+}
+
+#filAriane{
+    color:#7e7e7e;
+    padding: 1%;
+}
+
+#visuelProduit>h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#listeOnglet {
     background-color: #232628;
     color: #ffffff;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    height: 60px;
+    padding: 0 1%;
+    
+}
+
+#description>p{
+    padding: 1% 0 0;
+}
+
+#listeOnglet>button{
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 0 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+}
+
+.ongletActif{
+    background-color: #FFFFFF !important ; 
+    color: #000000 !important;
+    border-top: 5px solid #CC6119 !important;
+    margin-top: -5px;
+}
+
+#rectangleOrange {
+    background-color: #CC6119;
+    width: 5px;
+}
+
+#textImportant{
+    padding-left: 4%;
+    color:#7e7e7e;
+}
+
+#option{
+    padding: 1% 0 2%;
+}
+
+#option>h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding-bottom: 1%;
+}
+
+ul{
+    padding-left: 0 !important;
 }
