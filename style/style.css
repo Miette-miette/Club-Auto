@@ -10,11 +10,14 @@ main{
 /*////////// HEADER //////////*/
 
 #enTete{
+    padding-top: 0px;
     background-color: #232628;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
     padding: 1em 15%;
+    justify-content: space-around;
+
 
 }
 
@@ -63,7 +66,11 @@ main{
 /*////////// HEADER: HORAIRES //////////*/
 
 #horaires{
-    margin-top: 1em;
+    margin-top: 1%;
+}
+
+#horaires>div>p{
+    margin-bottom: 2%;
 }
 
 .indication{
@@ -72,6 +79,8 @@ main{
     font-size: small;
     margin-right: 10px;
 }
+
+
 
 /*////////// HEADER: RESEAUX SOCIAUX //////////*/
 
@@ -85,24 +94,37 @@ main{
     margin-right: 1em;
 }
 
-/*////////// NAV //////////
+/*////////// NAV /////////*/
 
 nav{
     background-color:rgba(255, 255, 255, 0.753);
     box-shadow: 0px 3px 15px -4px #000000;
     position: relative;
+    height: 56px;
     z-index: 2;
     padding-right: 15%;
-    font-weight: 500;
+    font-weight: 600;
 }
-nav>a{
+nav>ul>li{
     color: #232628;
     text-decoration: none;
     padding: 1em 2em;
 }
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
 .active{
     background-color: #CC6119;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+    width: 100%;
+}
+
+#btnNav{
+    display: none;
+    z-index: 1;
 }
 
 
@@ -111,7 +133,7 @@ main {
     top: -56px;
 }
 
-////////// FOOTER //////////*/
+/*///////// FOOTER //////////*/
 
 footer{
     background-color: #232628;
@@ -128,6 +150,23 @@ footer>div>div>h2{
     padding-bottom: 1%;
 }
 
+#footerClubAuto>p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    padding-bottom: 1%;
+}
+
+#footerClubAuto>p>span{
+    color: #6C98E1;
+}
+
+#footerClubAuto>p:nth-child(2){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: small;
+}
+
 #conteneurFooter{
     padding-top: 4%;
 }
@@ -141,9 +180,7 @@ footer>div>div>h2{
     padding:0 1%;
 }
 
-#footerClubAuto>h2>div{
-    color: #6C98E1;
-}
+
 
 #conteneurFooter>div>p{
     color:#b3b3b3 ;
@@ -221,6 +258,10 @@ footer>p{
 
 #textBienvenue>h2>span{
     color: #CC6119;
+}
+
+#textAuto>div>ul{
+    padding-left: 0 !important;
 }
 
 #textBienvenue>p{
@@ -319,9 +360,6 @@ li{
     padding: 3% 0;
 }
 
-.vehiculeCard{
-    padding: 0;
-}
 
 .vehiculeCard>div{
     background-color: #474747;
@@ -333,7 +371,7 @@ li{
     width: 50%;
 }
 
-.vehiculeCard>div>div>input{
+.prix{
     background-color: #6C98E1;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
@@ -343,6 +381,35 @@ li{
     padding: 2%;
     height: 30%;
 }
+
+.vehiculeCard>div>div>div{
+    background-color: #6C98E1;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: small;
+    height: fit-content;
+    border: none;
+    padding: 2%;
+    margin-bottom: 0;
+}
+
+.vehiculeCard>div>div>div>p{
+    
+    margin-bottom: 0;
+}
+
+
+.vehiculeCard>div>div>div>input{
+    background-color: #6C98E1;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    border: none;
+    
+}
+
 
 .hrWhite{
     background-color: #FFFFFF;
@@ -579,6 +646,6 @@ li{
     padding-bottom: 1%;
 }
 
-ul{
+#option>ul{
     padding-left: 0 !important;
 }

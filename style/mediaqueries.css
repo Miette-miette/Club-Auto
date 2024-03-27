@@ -5,7 +5,47 @@ main{
     overflow: hidden;
 }
 
+#enTete{
+    padding-top: 80px;
+    justify-content: flex-start !important;
+}
 
+nav{
+    display: none;
+}
+
+#menuCollapse{
+    background-color: #ffffff;
+    position: fixed;
+    padding: 60px 0 10px;
+    top: 0;
+    width: 100%;
+    font-weight: 600;
+    z-index: 1;
+
+
+}
+
+
+#menuCollapse>ul>li>a{
+    display: flex;
+    justify-content: center;
+}
+
+#btnNav{
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-style: none;
+    background-image: url(/media/list.svg) ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    z-index: 2;
+}
 
 /*////////// BANNIERE //////////*/
 
@@ -17,6 +57,10 @@ main{
 /*////////// BIENVENUE //////////*/
 #bienvenue{
     padding:10%;
+}
+
+#textBienvenue>h2{
+    padding-top: 6%;
 }
 
 #bienvenue>div>img{
@@ -39,7 +83,7 @@ main{
 }
 #venteEtLocation {
     padding: 5% 0; 
-    width: 100%;
+    width: 105%;
 }
 #venteEtLocation>div {
    

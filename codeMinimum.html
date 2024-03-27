@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html>
-    <head lang="fr">
+<html lang="fr">
+    <head >
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Club Auto - Accueil</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/mediaqueries.css">
-        <link rel="stylesheet" href="style/bootstrap.min.css">
-
-
     </head>
 
     <body>
@@ -57,17 +55,33 @@
 
         </header>
         
-        <nav class="d-flex  justify-content-end" id="navbar">
-            <a href="index.html">ACCUEIL</a>
-            <a href="index.html">VENTE</a>
-            <a href="index.html">LOCATION</a>
-            <a href="contact.html">CONTACT</a>
+               <div>
+            <button class="navbar-toggle d-lg-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse" id="btnNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse" id="menuCollapse">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item"><a href="index.html" class="nav-link active">ACCUEIL</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">VENTE</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">LOCATION</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>   
+        </div>
+
+        <nav class="d-lg-flex flex-lg-row justify-content-end">
+                <ul>
+                    <li class="active"><a href="index.html" class="nav-link">ACCUEIL</a></li>
+                    <li><a href="index.html" class="nav-link">VENTE</a></li>
+                    <li><a href="index.html" class="nav-link">LOCATION</a></li>
+                    <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                </ul>   
         </nav>
 
         <footer >
             <div id="conteneurFooter" class="d-lg-flex flex-lg-row flex-column justify-content-around align-items-center">
                 <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
-                    <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
+                    <p class=" h1 d-inline-flex flex-row "><span> CLUB&nbsp;</span> AUTO</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                          Eveniet, nesciunt placeat reiciendis eum assumenda</p>
                 </div>
@@ -116,6 +130,6 @@
             <hr/>
             <p class="d-inline-flex justify-content-around align-items-center">Copyright &copy; Club Auto-Tous droits réservés</p>
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
 </html>

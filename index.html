@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-    <head lang="fr">
+<html lang="fr">
+    <head >
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Club Auto - Accueil</title>
@@ -36,10 +36,10 @@
 
                 <div id="horaires" class="d-none d-xl-flex flex-column align-items-start align-self-start">
                     <div class="d-flex flex-row align-self-baseline">
-                        <p><div class="indication">OUVERTURE:</div> <strong> Du lundi au Samedi</strong></p>
+                        <p><span class="indication">OUVERTURE:</span> <strong> Du lundi au Samedi</strong></p>
                     </div>
                     <div class="d-flex flex-row align-items-baseline">
-                        <p><div class="indication">HORAIRES:</div> <strong> De 9h à 17h </strong></p>
+                        <p><span class="indication">HORAIRES:</span> <strong> De 9h à 17h </strong></p>
                     </div>
                 </div>
 
@@ -56,19 +56,28 @@
         </header>
 
         
-        <p>
-            <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="btnNav">
+        <div>
+            <button class="navbar-toggle d-lg-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse" id="btnNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <ul class="navbar-nav ms-auto">
+        </div>
+        <div class="collapse" id="menuCollapse">
+            <ul class="navbar-nav ms-auto ">
                 <li class="nav-item"><a href="index.html" class="nav-link active">ACCUEIL</a></li>
                 <li class="nav-item"><a href="index.html" class="nav-link">VENTE</a></li>
                 <li class="nav-item"><a href="index.html" class="nav-link">LOCATION</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
             </ul>   
         </div>
+
+        <nav class="d-lg-flex flex-lg-row justify-content-end">
+                <ul>
+                    <li class="active"><a href="index.html" class="nav-link">ACCUEIL</a></li>
+                    <li><a href="index.html" class="nav-link">VENTE</a></li>
+                    <li><a href="index.html" class="nav-link">LOCATION</a></li>
+                    <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                </ul>   
+        </nav>
           
         <main class="container">
 
@@ -145,7 +154,7 @@
                         <div >
                             <div class="d-flex flex-row justify-content-between">
                                 <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
-                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="5500 &euro;" name="prix" id="prix">
+                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="5500 &euro;" name="prix" class="prix">
                             </div>
                             <div class="hrWhite"></div>                   
                         </div>
@@ -156,7 +165,7 @@
                         <div>
                             <div class="d-flex flex-row justify-content-between">
                                 <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
-                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="8000 &euro;" name="prix" id="prix">
+                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="8000 &euro;" name="prix" class="prix">
                             </div>
                             <div class="hrWhite"></div>
                         </div>    
@@ -167,7 +176,10 @@
                         <div>
                             <div class="d-flex flex-row justify-content-between">
                                 <h3 class="h5">BMW 5351, NAVI, LEATHER, ABS</h3>
-                                <input type="button" onclick="window.location.href='vehicule_details.html'" value="9000 &euro; 8200 &euro;" name="prix" id="prix">
+                                <div>
+                                    <p><s>9000 &euro;</s></p>
+                                    <input type="button" onclick="window.location.href='vehicule_details.html'" value="8200 &euro;" name="prix" class="prix">
+                                </div>
                             </div>
                             <div class="hrWhite"></div>
                         </div>   
@@ -203,7 +215,7 @@
                     </div>
 
                     <div class="d-flex flex-row">
-                        <img src="media/icon3.png" alt="icone dialogue" class=" img-fluid w-20 ">
+                        <img src="media/icon3.png" alt="icone dialogue" class=" img-fluid w-10 ">
 
                         <div class="itemChoix">
                         
@@ -244,7 +256,7 @@
         <footer >
             <div id="conteneurFooter" class="d-lg-flex flex-lg-row flex-column justify-content-around align-items-center">
                 <div id="footerClubAuto" class="itemFooter d-flex flex-column align-self-start">
-                    <h2 class="d-flex flex-row"><div> CLUB&nbsp;</div> AUTO</h2>
+                    <p class=" h1 d-inline-flex flex-row "><span> CLUB&nbsp;</span> AUTO</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                          Eveniet, nesciunt placeat reiciendis eum assumenda</p>
                 </div>
@@ -264,7 +276,7 @@
                         </div>
                     </div>
                     
-                    <p>Inscrivez-vous pour recevoir les<br/> dernières offres</p>
+                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
 
                 <div id="footerRS" class="itemFooter d-flex flex-column align-self-start">
