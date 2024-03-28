@@ -90,6 +90,15 @@ nav{
     margin: 0;
 }
 
+.vehiculeCard>div>div>h3 {
+    width: 100%;
+}
+
+.prix {
+    width: 40%;
+    margin: 4%;
+}
+
 #nousChoisir {
     padding: 10% 0;
 }
